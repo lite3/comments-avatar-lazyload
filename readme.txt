@@ -3,8 +3,8 @@ Contributors: lite3
 Donate link: https://me.alipay.com/lite3
 Tags: comments, lazyload, avatar, image, img
 Requires at least: 3.0.0
-Tested up to: 4.0
-Stable tag: 2.6.2
+Tested up to: 4.4
+Stable tag: 2.6.3
 
 Comments Avatar Lazyload at server side load replace the src property of img tag. It is relly lazyload. It was successfully checked by W3C. 
 
@@ -32,12 +32,12 @@ If you want to install manually, download and unzip the `comments-avatar-lazyloa
 
 
 == Changelog ==
+= 2.6.3 =
+* Tested up to: 4.4
 = 2.6.2 =
 * Fixed: Notice undefined index.
 = 2.6.1.1 =
 * Tested up to: 4.0
-= 2.6.1 =
-* Tested up to: 3.9.1
 = 2.6 =
 * Fixed: Fix avatar display only comments list.
 = 2.5 =
