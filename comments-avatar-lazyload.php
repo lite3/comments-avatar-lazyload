@@ -19,13 +19,13 @@ http://www.gnu.org/licenses/gpl.txt
 /* ------------------------------------------------------------ */
 class CommentsAvatarLazyloadOptions {
 
-	function getDefalutOptions(){
+	public static function getDefalutOptions(){
 		$options = array();
 		$options['load_js_at_front_page']	= false;
 		return $options;
 	}
 	
-	function getOptions() {
+	public static function getOptions() {
 		$options = get_option('commentsAvatarLazyload_options');
 		$ver_change = false;
 		if(!is_array($options)) {
@@ -44,7 +44,7 @@ class CommentsAvatarLazyloadOptions {
 		return $options;
 	}
 	
-	function add() {
+	public static function add() {
 		if(isset($_POST['commentsAvatarLazylaod_save'])) {
 			$options = CommentsAvatarLazyloadOptions::getOptions();
 			
@@ -62,7 +62,7 @@ class CommentsAvatarLazyloadOptions {
 		add_filter( 'plugin_action_links', array('CommentsAvatarLazyloadOptions', 'plugin_action_links'), 10, 2 );
 	}
 	
-	function plugin_action_links( $links, $file ) {
+	public static function plugin_action_links( $links, $file ) {
 		if ( $file != plugin_basename( __FILE__ )) return $links;
 
 		$settings_link = '<a href="options-general.php?page=comments-avatar-lazyload/comments-avatar-lazyload.php">' . __( 'Settings', 'comments-avatar-lazyload' ) . '</a>';
@@ -71,7 +71,7 @@ class CommentsAvatarLazyloadOptions {
 		return $links;
 	}
 
-	function display() {
+	public static function display() {
 		$options = CommentsAvatarLazyloadOptions::getOptions();
 ?>
 
