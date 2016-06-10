@@ -58,7 +58,7 @@ class CommentsAvatarLazyloadOptions {
 			CommentsAvatarLazyloadOptions::getOptions();
 		}
 
-		add_options_page(__('Comments Avatar Lazyload', 'comments-avatar-lazyload'), __('Comments Avatar Lazyload', 'comments-avatar-lazyload'), 10, __FILE__, array('CommentsAvatarLazyloadOptions', 'display'));
+		add_options_page(__('Comments Avatar Lazyload', 'comments-avatar-lazyload'), __('Comments Avatar Lazyload', 'comments-avatar-lazyload'), 'manage_options', __FILE__, array('CommentsAvatarLazyloadOptions', 'display'));
 		add_filter( 'plugin_action_links', array('CommentsAvatarLazyloadOptions', 'plugin_action_links'), 10, 2 );
 	}
 	
