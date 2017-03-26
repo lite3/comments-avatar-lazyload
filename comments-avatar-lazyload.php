@@ -4,15 +4,13 @@
  */
 /*
 Plugin Name: Comments Avatar Lazyload
-Plugin URI: http://www.litefeel.com/comments-avatar-lazyload/
+Plugin URI: https://www.litefeel.com/comments-avatar-lazyload/
 Description: Comments Avatar Lazyload at server side load replace the src property of img tag. It is relly lazyload. It was successfully checked by W3C. 
 Version: 2.6.3
-Author: lite3
-Author URI: http://www.litefeel.com/
-
-Copyright (c) 2011
-Released under the GPL license
-http://www.gnu.org/licenses/gpl.txt
+Author: litefeel
+Author URI: https://www.litefeel.com/
+License: GPLv2 or later
+Text Domain: comments-avatar-lazyload
 */
 
 /* options */
@@ -127,7 +125,7 @@ class CommentsAvatarLazyloadOptions {
 add_action('admin_menu', array('CommentsAvatarLazyloadOptions', 'add'));
 /* l10n */
 /* ------------------------------------------------------------ */
-load_plugin_textdomain( 'comments-avatar-lazyload', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/');
+load_plugin_textdomain( 'comments-avatar-lazyload' );
 
 
 add_action('template_redirect', 'call_load_static');
