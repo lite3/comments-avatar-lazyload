@@ -6,7 +6,7 @@
 Plugin Name: Comments Avatar Lazyload
 Plugin URI: https://www.litefeel.com/comments-avatar-lazyload/
 Description: Comments Avatar Lazyload at server side load replace the src property of img tag. It is relly lazyload. It was successfully checked by W3C. 
-Version: 2.6.3
+Version: 2.7
 Author: litefeel
 Author URI: https://www.litefeel.com/
 License: GPLv2 or later

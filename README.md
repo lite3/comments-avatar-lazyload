@@ -4,7 +4,7 @@
 **Donate Link:** https://www.paypal.me/litefeel  
 **Requires at least:** 3.0.0  
 **Tested up to:** 4.7.3  
-**Stable tag:** 2.6.3  
+**Stable tag:** 2.7  
 **License:** GPLv2  
 **License URI:** https://www.gnu.org/licenses/gpl-2.0.html  
 
